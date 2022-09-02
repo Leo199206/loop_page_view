@@ -51,6 +51,8 @@ class LoopPageController {
   Iterable<ScrollPosition> get positions => _pageController.positions;
 
   bool get keepScrollOffset => _pageController.keepScrollOffset;
+  
+  PageController get pageConcroller => _pageController;
 
   void addListener(VoidCallback listener) {
     _pageController.addListener(listener);
